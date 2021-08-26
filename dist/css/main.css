@@ -395,7 +395,7 @@ header #main-nav ul li a:hover {
       align-self: start;
   text-align: left;
   padding: 0;
-  width: 50%;
+  width: 100%;
 }
 
 #footer-wrapper .left h3.title {
@@ -407,6 +407,7 @@ header #main-nav ul li a:hover {
   margin-bottom: 0;
   font-size: 0.9rem;
   line-height: 150%;
+  width: clamp(45ch, 50%, 75ch);
 }
 
 #footer-wrapper .left p:first-child {
