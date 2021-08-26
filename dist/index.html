@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-section">
+            <a id="logo-link" href="">
+                <h1><span class="logo-span-a">Research</span><span class="logo-span-b">Base</span></h1>
+                <p>Find articles</p>
+            </a>
+
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <h1>Look for an article</h1>
+        <p>If you have any question you can ask below or enter what you are looking for!</p>
+        <form id="search-form" class="search-form clearfix" method="get" action="#" autocomplete="off"
+            novalidate="novalidate">
+            <input class="search-term" type="text" id="search" name="s" placeholder="Type your search terms here"
+                title="* Please enter a search term!" autocomplete="off">
+            <input class="btn" type="submit" value="Search">
+        </form>
+    </section>
+
+    <!-- Article Display Section -->
+    <article class="display-content">
+        <div class="width-wrapper">
+            <section id="featured">
+                <h3 class="section-headline">Featured Articles</h3>
+                <ul class="articles">
+                    <li class="article-entry">
+                        <i class="far fa-file-image "></i>
+                        <h4><a href="single.html">Integrating WordPress with Your Website</a></h4>
+                        <span class="article-meta">25 Feb, 2013 in <a href="#"
+                                title="View all posts in Server &amp; Database">Server &amp; Database</a></span>
+                        <span class="like-count">66 views</span>
+                    </li>
+                    <li class="article-entry">
+                        <i class="far fa-file-alt "></i>
+                        <h4><a href="single.html">WordPress Site Maintenance</a></h4>
+                        <span class="article-meta">24 Feb, 2013 in <a href="#"
+                                title="View all posts in Website Dev">Website
+                                Dev</a></span>
+                        <span class="like-count">15 views</span>
+                    </li>
+                    <li class="article-entry">
+                        <i class="far fa-file-alt "></i>
+                        <h4><a href="single.html">Meta Tags in WordPress</a></h4>
+                        <span class="article-meta">23 Feb, 2013 in <a href="#"
+                                title="View all posts in Website Dev">Website
+                                Dev</a></span>
+                        <span class="like-count">8 views</span>
+                    </li>
+                    <li class="article-entry">
+                        <i class="far fa-file-alt "></i>
+                        <h4><a href="single.html">WordPress in Your Language</a></h4>
+                        <span class="article-meta">22 Feb, 2013 in <a href="#"
+                                title="View all posts in Advanced Techniques">Advanced Techniques</a></span>
+                        <span class="like-count">6 views</span>
+                    </li>
+                    <li class="article-entry ">
+                        <i class="far fa-file-video "></i>
+                        <h4><a href="single.html">Know Your Sources</a></h4>
+                        <span class="article-meta">22 Feb, 2013 in <a href="#"
+                                title="View all posts in Website Dev">Website
+                                Dev</a></span>
+                        <span class="like-count">2 views</span>
+                    </li>
+                    <li class="article-entry ">
+                        <i class="far fa-file-alt "></i>
+                        <h4>Validating a Website</h4>
+                        <span class="article-meta">21 Feb, 2013 in <a href="#"
+                                title="View all posts in Website Dev">Website
+                                Dev</a></span>
+                        <span class="like-count">3 views</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="latest">
+                <h3 class="section-headline">Latest Articles</h3>
+                <ul class="articles">
+                    <li class="article-entry ">
+                        <i class="far fa-file-alt "></i>
+                        <h4><a href="single.html">Integrating WordPress with Your Website</a></h4>
+                        <span class="article-meta">25 Feb, 2013 in <a href="#"
+                                title="View all posts in Server &amp; Database">Server &amp; Database</a></span>
+                        <span class="like-count">66 views</span>
+                    </li>
+                    <li class="article-entry ">
+                        <i class="far fa-file-video "></i>
+                        <h4><a href="single.html">WordPress Site Maintenance</a></h4>
+                        <span class="article-meta">24 Feb, 2013 in <a href="#"
+                                title="View all posts in Website Dev">Website
+                                Dev</a></span>
+                        <span class="like-count">15 views</span>
+                    </li>
+                    <li class="article-entry video">
+                        <i class="far fa-file-image "></i>
+                        <h4><a href="single.html">Meta Tags in WordPress</a></h4>
+                        <span class="article-meta">23 Feb, 2013 in <a href="#"
+                                title="View all posts in Website Dev">Website
+                                Dev</a></span>
+                        <span class="like-count">8 views</span>
+                    </li>
+                    <li class="article-entry image">
+                        <i class="far fa-file-alt "></i>
+                        <h4><a href="single.html">WordPress in Your Language</a></h4>
+                        <span class="article-meta">22 Feb, 2013 in <a href="#"
+                                title="View all posts in Advanced Techniques">Advanced Techniques</a></span>
+                        <span class="like-count">6 views</span>
+                    </li>
+                    <li class="article-entry ">
+                        <i class="far fa-file-image "></i>
+                        <h4><a href="single.html">Know Your Sources</a></h4>
+                        <span class="article-meta">22 Feb, 2013 in <a href="#"
+                                title="View all posts in Website Dev">Website
+                                Dev</a></span>
+                        <span class="like-count">2 views</span>
+                    </li>
+                    <li class="article-entry ">
+                        <i class="far fa-file-image "></i>
+                        <h4><a href="single.html">Validating a Website</a></h4>
+                        <span class="article-meta">21 Feb, 2013 in <a href="#"
+                                title="View all posts in Website Dev">Website
+                                Dev</a></span>
+                        <span class="like-count">3 views</span>
+                    </li>
+                </ul>
+            </section>
+            <section id="display-links">
+                <div class="further-links">
+                    <h3 class="section-headline">Support</h3>
+                    <p> Need more support? If you did not find an answer, contact us for further help.</p>
+                </div>
+
+                <div class="tag-links">
+                    <h3 class="section-headline">Tags</h3>
+                    <button class="tag-btn">Medicine</button>
+                    <button class="tag-btn">Economics</button>
+                    <button class="tag-btn">Engineering</button>
+                    <button class="tag-btn">Communications</button>
+                    <button class="tag-btn">BioTechnology</button>
+                    <button class="tag-btn">Astronomy</button>
+                </div>
+            </section>
+        </div>
+    </article>
+
+    <!---- Footer------------>
+    <footer id="footer-wrapper">
+        <div class="width-wrapper">
+            <div id="footer" class="container">
+                <div class="row">
+                    <div class="left">
+                        <h3 class="title">How it works</h3>
+                        <div class="textwidget">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                                nisl ut aliquip ex ea commodo consequat. </p>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <h3 class="title">Categories</h3>
+                        <ul>
+                            <li><a href="#" title="Lorem ipsum dolor sit amet,">Advanced Techniques</a> </li>
+                            <li><a href="#" title="Lorem ipsum dolor sit amet,">Designing in WordPress</a></li>
+                            <li><a href="#" title="Lorem ipsum dolor sit amet,">Server &amp; Database</a></li>
+                            <li><a href="#" title="Lorem ipsum dolor sit amet, ">Theme Development</a></li>
+                            <li><a href="#" title="Lorem ipsum dolor sit amet,">Website Dev</a></li>
+                            <li><a href="#" title="Lorem ipsum dolor sit amet,">WordPress for Beginners</a></li>
+                            <li><a href="#" title="Lorem ipsum dolor sit amet, ">WordPress Plugins</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full width -->
+        <div class="bottom">
+            <div class="first">
+                <p class="copyright">
+                    Copyright © 2013. All Rights Reserved by ResearchBase.
+                </p>
+            </div>
+            <div class="social">
+                <!-- Social Navigation -->
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
