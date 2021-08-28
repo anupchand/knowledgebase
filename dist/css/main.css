@@ -155,7 +155,7 @@
   font-size: 1.5rem;
   text-decoration: none;
   cursor: pointer;
-  background: #2c7281;
+  background: #1c4047;
 }
 
 .btn:hover {
@@ -275,8 +275,8 @@ header#main-header #main-nav ul li a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   background: #161877;
-  background: -webkit-gradient(linear, left top, right top, color-stop(11%, #161877), color-stop(49%, #3a72b5), color-stop(77%, #02b9ee));
-  background: linear-gradient(90deg, #161877 11%, #3a72b5 49%, #02b9ee 77%);
+  background: -webkit-gradient(linear, left top, right top, from(#272d61), color-stop(#2c7281), to(#67a5ce));
+  background: linear-gradient(90deg, #272d61, #2c7281, #67a5ce);
 }
 
 .section-1 h1 {
