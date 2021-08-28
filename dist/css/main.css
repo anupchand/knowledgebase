@@ -21,15 +21,19 @@
   padding-left: 1rem;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1280px) {
   .container-box {
     width: 100vw;
     margin: 0 auto;
   }
 }
 
-.mt-0 {
-  margin-top: 0;
+.p-l-r-1 {
+  padding: 0 1rem;
+}
+
+.m-0 {
+  margin: 0;
 }
 
 .font-1-5 {
@@ -82,6 +86,18 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.flex-content-at-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .flex-content-at-ends {
@@ -208,11 +224,6 @@ header#main-header .container-box .split-content-at-ends .logo-section {
   color: #fff;
 }
 
-header#main-header .container-box .split-content-at-ends .logo-section h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 header#main-header .container-box .split-content-at-ends .logo-section .logo-span-a {
   font-weight: 200;
   font-size: 3rem;
@@ -223,12 +234,8 @@ header#main-header .container-box .split-content-at-ends .logo-section .logo-spa
   font-weight: 500;
 }
 
-header#main-header .container-box .split-content-at-ends .logo-section p {
-  padding-left: 1rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  letter-spacing: 1px;
-  margin: 0;
+header#main-header .container-box .split-content-at-ends .logo-section .logo-span p.logo-section {
+  padding-left: 5px;
 }
 
 header#main-header #main-nav {
@@ -290,6 +297,7 @@ header#main-header #main-nav ul li a:hover {
 .section-1 #search-form input#search {
   display: inline-block;
   text-align: center;
+  font-size: 1rem;
   width: 1000px;
   height: 70px;
 }
@@ -310,7 +318,12 @@ header#main-header #main-nav ul li a:hover {
   color: #5f6466;
 }
 
+.section-2 .container-box {
+  padding-left: 2rem;
+}
+
 .section-2 a {
+  margin-left: 7px;
   color: #5f6466;
 }
 
@@ -332,13 +345,19 @@ header#main-header #main-nav ul li a:hover {
 }
 
 .section-2 .fixed-size div {
-  width: 330px;
+  width: 300px;
 }
 
 .section-2 .article-entry {
   font-size: 1.5rem;
   border-bottom: 1px solid #d4d2d2;
   padding-bottom: 1rem;
+}
+
+.section-2 .article-entry li div:first-child {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .section-2 .article-entry i.far {
@@ -348,25 +367,17 @@ header#main-header #main-nav ul li a:hover {
 
 .section-2 .article-entry h4 {
   font-size: 1rem;
-  grid-area: title;
   margin-bottom: 0;
   padding-bottom: 0rem;
-  vertical-align: text-top;
 }
 
 .section-2 .article-entry .article-meta {
-  grid-area: info;
   font-weight: 100;
   font-size: 0.8rem;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
 }
 
 .section-2 .article-entry .like-count {
-  grid-area: votes;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  float: right;
   font-weight: 100;
   font-size: 0.7rem;
   padding: 3px;
@@ -384,15 +395,27 @@ header#main-header #main-nav ul li a:hover {
 }
 
 .section-2 #display-links {
-  width: 280px;
+  width: 300px;
+}
+
+@media screen and (max-width: 1280px) {
+  .section-2 #display-links {
+    width: 250px;
+  }
 }
 
 .section-2 #display-links .further-links {
-  width: 280px;
+  width: 300px;
   padding: 1rem;
   font-family: "Raleway", sans-serif;
   padding-top: 5px;
   background-color: #fce7a0;
+}
+
+@media screen and (max-width: 1280px) {
+  .section-2 #display-links .further-links {
+    width: 250px;
+  }
 }
 
 .section-2 #display-links .further-links h3 {
@@ -406,12 +429,20 @@ header#main-header #main-nav ul li a:hover {
 }
 
 .section-2 #display-links .tag-links {
+  width: 300px;
   margin-top: 3rem;
   padding-right: 3rem;
   padding-left: 1rem;
 }
 
+@media screen and (max-width: 1280px) {
+  .section-2 #display-links .tag-links {
+    width: 250px;
+  }
+}
+
 .section-3 .how-it-works {
+  padding-left: 1rem;
   padding-bottom: 2rem;
 }
 
@@ -437,6 +468,10 @@ header#main-header #main-nav ul li a:hover {
 
 #footer-wrapper {
   color: #5f6466;
+}
+
+#footer-wrapper .first {
+  padding-left: 2rem;
 }
 
 #footer-wrapper .social > * {
