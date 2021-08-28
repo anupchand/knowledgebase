@@ -377,6 +377,7 @@ header#main-header #main-nav ul li a:hover {
 }
 
 .section-2 .article-entry .like-count {
+  cursor: pointer;
   float: right;
   font-weight: 100;
   font-size: 0.7rem;
