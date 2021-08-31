@@ -188,10 +188,17 @@
   width: clamp(45ch, 40%, 50ch);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 901px) {
   .card {
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -309,7 +316,7 @@ header#main-header .container-box .flex-content-at-ends .logo-section .logo-span
 
 @media screen and (max-width: 900px) {
   header#main-header .container-box .flex-content-at-ends .logo-section .logo-span-a {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -320,7 +327,7 @@ header#main-header .container-box .flex-content-at-ends .logo-section .logo-span
 
 @media screen and (max-width: 900px) {
   header#main-header .container-box .flex-content-at-ends .logo-section .logo-span-b {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -550,15 +557,15 @@ header#main-header #main-nav ul li a:hover {
   width: 300px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1001px) {
   .section-2 #display-links {
     width: 250px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .section-2 #display-links {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -576,9 +583,10 @@ header#main-header #main-nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .section-2 #display-links .further-links {
-    width: 100%;
+    width: 90%;
+    text-align: center;
   }
 }
 
@@ -605,15 +613,42 @@ header#main-header #main-nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .section-2 #display-links .tag-links {
-    width: 100%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 901px) {
+  .section-3 .flex-content-at-ends {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 .section-3 .how-it-works {
   padding-left: 1rem;
   padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-3 .how-it-works {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 901px) {
+  .section-3 .how-it-works {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .section-3 .how-it-works h3 {
