@@ -309,7 +309,7 @@ header#main-header .container-box .flex-content-at-ends .logo-section .logo-span
 
 @media screen and (max-width: 900px) {
   header#main-header .container-box .flex-content-at-ends .logo-section .logo-span-a {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -320,7 +320,7 @@ header#main-header .container-box .flex-content-at-ends .logo-section .logo-span
 
 @media screen and (max-width: 900px) {
   header#main-header .container-box .flex-content-at-ends .logo-section .logo-span-b {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -532,6 +532,11 @@ header#main-header #main-nav ul li a:hover {
   border-radius: 5px;
 }
 
+.section-2 .article-entry .like-count::after {
+  content: "views";
+  padding-left: 0.2rem;
+}
+
 .section-2 .article-entry .like-count:hover {
   background-color: #5f6466;
   color: #fff;
@@ -545,15 +550,15 @@ header#main-header #main-nav ul li a:hover {
   width: 300px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1001px) {
   .section-2 #display-links {
     width: 250px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .section-2 #display-links {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -571,9 +576,9 @@ header#main-header #main-nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .section-2 #display-links .further-links {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -600,9 +605,9 @@ header#main-header #main-nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .section-2 #display-links .tag-links {
-    width: 100%;
+    width: 90%;
   }
 }
 
