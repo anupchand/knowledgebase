@@ -289,7 +289,7 @@ header#main-header {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   header#main-header .container-box .flex-content-at-ends {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
