@@ -579,6 +579,7 @@ header#main-header #main-nav ul li a:hover {
 @media screen and (max-width: 1000px) {
   .section-2 #display-links .further-links {
     width: 90%;
+    text-align: center;
   }
 }
 
