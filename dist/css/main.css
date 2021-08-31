@@ -622,6 +622,7 @@ header#main-header #main-nav ul li a:hover {
 @media screen and (max-width: 900px) {
   .section-3 .some-ul-list {
     padding: 3rem;
+    width: 100%;
   }
 }
 
@@ -635,6 +636,11 @@ header#main-header #main-nav ul li a:hover {
 
 .section-3 .some-ul-list ul li {
   margin-bottom: 0.5rem;
+}
+
+.section-3 .some-ul-list ul li::before {
+  content: ">";
+  padding-right: 1rem;
 }
 
 #footer-wrapper {
